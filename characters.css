@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.overall{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-image: url(./b2.jpg);
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    /* background-color: hotpink; */
+    background-image: linear-gradient(to right,aqua,pink);
+    padding: 5px 10px;
+    cursor:pointer;
+    /* position: relative; */
+    transition: all 1s;
+}
+
+img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+.card:hover{
+    box-shadow: 17px 13px 28px;
+    transform: scale(1.1);
+    /* transform: rotate(5deg); */
+    animation-name: card;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    /* transform: rotate(360deg); */
+}
+/* @keyframes card{
+    0%{
+        border: 5px solid red;left: 0px;top:0px;
+    }
+    25%{
+        border: 5px solid rgb(148, 214, 25);left: 200px;top:0px; 
+    }
+    50%{
+        border:5px solid rgb(96, 14, 158);left:200px;top:200px;
+    }
+    75%{
+        border:5px solid rgb(222, 195, 47);left:0px;top:200px;
+    }
+    100%{
+        border:5px solid rgb(96, 14, 158);left:0px;top:0px;
+    } */
+/* } */
+@media only screen and (min-width: 700px) and (max-width: 950px){
+
+    .overall{
+        display: grid;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        background-image: url(./b2.jpg);
+        width: 100%;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 700px){
+
+    .overall{
+        display: grid;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        background-image: url(./b2.jpg);
+        width: 100%;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}

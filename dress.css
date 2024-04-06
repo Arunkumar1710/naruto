@@ -1,0 +1,44 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.shopping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopcard{
+    width: 28%;
+}
+.shopcard img{
+   width: 350px;
+   height: 350px;
+}
+.info{
+    width: 30%;
+    padding: 10px;
+}
+p{
+padding: 10px;
+}
+button{
+    margin-bottom: 1rem;
+    padding: 4px;
+    margin-right: 10px;
+    background-color: white;
+    border: px;
+}
+.btn{
+    background-color: cadetblue;
+    border: none;
+}
+.B{
+    padding: 4px 11px;
+}
+.h1{
+    padding-bottom: 5px;
+}
+.btn1{
+    background-color: yellow;
+}
